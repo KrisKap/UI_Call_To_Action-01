@@ -1,0 +1,154 @@
+
+/****************************************************/
+/*  Table of Contents                               */
+/*  1. Reset styles                                 */
+/*  2. Base styles                                  */
+/****************************************************/
+
+
+
+
+/****************************************************/
+/******************  RESET styles  ******************/
+/****************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/****************************************************/
+/******************  Base styles  *******************/
+/****************************************************/
+
+body {
+  font-family: sans-serif;
+}
+
+.cta {
+  padding: 70px 0 70px 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cta__title {
+  font-size: 3em;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta__text {
+  font-size: 1.2em;
+  line-height: 1.5;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.cta__input {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius:3px;
+  font-size: 0.75em;
+}
+
+.cta__input:focus::placeholder {
+  color: transparent;
+}
+
+.cta__button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 0.75em;
+}
+
+
+.cta__input:focus,
+.cta__button:focus {
+  outline-style: none;
+}
+
+.cta__message--error,
+.cta__message--success {
+  display: block;
+  font-size: 0.9em;
+  line-height: 1.3;
+  margin-top: 5px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .cta__text {
+    font-size: 1em;
+  }
+
+  .cta__message--error,
+  .cta__message--success {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+
+}
+
+
+@media (max-width: 360px) {
+
+  .cta__title {
+    font-size: 2.5em;
+  }
+
+}
