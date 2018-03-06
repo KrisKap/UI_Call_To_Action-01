@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Call To Action - 05</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 
@@ -20,14 +20,15 @@
 
             <form class="cta__form" action="index.html" method="post">
 
-              <div class="form-group">
-                <input class="cta__input" type="email" name="email-input" placeholder="Your email">
-                <input class="cta__button" type="submit" name="submit-button" value="Preorder">
-              </div>
+              <input class="cta__input" type="text" name="user-name" placeholder="Your name" required>
+              <input class="cta__input" type="email" name="email-input" placeholder="Your email" required>
+              <input class="cta__button" type="submit" name="submit-button" value="Preorder">
 
               <span class="cta__message--error">There has been internal error.</span>
               <span class="cta__message--success">Great! Please click the link in the email we've just sent you.</span>
+
             </form>
+
 
         </div> <!-- end of .container -->
 

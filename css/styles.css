@@ -1,0 +1,100 @@
+
+body {
+  /* background-color: #2d3436; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cta {
+  padding: 70px 0 90px 0;
+  color: #555;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  background:linear-gradient(
+             to right,
+             rgba(255, 255, 255, 0.85),
+             rgba(255, 255, 255, 0.85) 50%,
+             transparent 50%),
+             url("../images/hero_image_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  /* text-align: center; */
+}
+
+.cta__text {
+    max-width: 400px;
+}
+
+.cta__input,
+.cta__button {
+  display: block;
+  /* margin: 0 auto; */
+  width: 250px;
+  margin-bottom: 5px;
+}
+
+
+.cta__input {
+  padding: 15px 20px;
+  border: none;
+  background-color: rgba(70, 70, 70, 0.15);
+  color: #555;
+}
+
+.cta__input::placeholder {
+  color: #555;
+  transition: all 0.3s;
+}
+
+.cta__button {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #fff;
+  padding: 15px 20px;
+  background-color: #1B8BF9;
+  border-style: none;
+  transition: background-color 0.4s, color 0.4s, box-shadow 0.4s;
+}
+
+.cta__button:hover,
+.cta__button:focus,
+.cta__button:active {
+  color: #fff;
+  background-color: #1B8BF9;
+}
+
+.cta__message--error,
+.cta__message--success {
+  display: none;
+}
+
+
+
+
+@media (max-width: 980px) {
+
+  .cta {
+    background:linear-gradient(
+             to right,
+             rgba(255, 255, 255, 0.9),
+             rgba(255, 255, 255, 0.9)),
+             url("../images/hero_image_640.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .cta__text {
+    font-size: 1em;
+  }
+
+}
+
+
+@media (max-width: 360px) {
+
+  .cta__title {
+    font-size: 2.5em;
+  }
+
+}
